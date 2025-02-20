@@ -1,0 +1,45 @@
+#define pinLEDVERDE 11
+#define pinLEDAMARELO 12
+#define pinLEDVERMELHO 13
+#define pinLEDVERMELHOCRUZ 8
+#define pinLEDAMARELOCRUZ 9
+#define pinLEDVERDECRUZ 10
+void setup()
+{
+  pinMode(pinLEDVERDE, OUTPUT);
+  pinMode(pinLEDVERMELHO, OUTPUT);
+  pinMode(pinLEDAMARELO, OUTPUT);
+  pinMode(pinLEDVERMELHOCRUZ, OUTPUT);
+  pinMode(pinLEDAMARELOCRUZ, OUTPUT);
+  pinMode(pinLEDVERDECRUZ, OUTPUT);
+}
+
+void loop()
+{
+digitalWrite(pinLEDVERMELHO, HIGH);
+digitalWrite(pinLEDVERDECRUZ, HIGH); 
+  delay(3000);
+ digitalWrite(pinLEDVERDECRUZ, LOW);
+digitalWrite(pinLEDAMARELOCRUZ, HIGH);
+
+  delay(2000);
+ digitalWrite(pinLEDAMARELOCRUZ,LOW);
+digitalWrite(pinLEDVERMELHO,LOW);
+digitalWrite(pinLEDVERDE,HIGH);
+  digitalWrite(pinLEDVERMELHOCRUZ,HIGH);
+delay(2000);
+digitalWrite(pinLEDAMARELO,LOW);
+
+  
+digitalWrite(pinLEDVERDE, HIGH);
+  delay(3000);
+ digitalWrite(pinLEDVERMELHOCRUZ,HIGH);
+digitalWrite(pinLEDVERDE,LOW);
+ digitalWrite(pinLEDAMARELO,HIGH);
+ delay(2000);
+digitalWrite(pinLEDAMARELO,LOW);
+digitalWrite(pinLEDVERMELHOCRUZ,LOW);
+  delay(2000);
+ 
+ 
+}
