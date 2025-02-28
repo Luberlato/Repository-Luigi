@@ -1,0 +1,28 @@
+ float IMC;
+ float Altura = 1.88;
+ float Peso = 150;
+ 
+void setup()
+{
+Serial.begin(9600);
+IMC = Peso/sq(Altura);
+Serial.println(IMC,1);
+  if(IMC<19.1){
+    Serial.print("Abaixo do peso");
+  }
+  else if(IMC<=25.8 & IMC>19.1){
+  Serial.print("Peso ideal");
+  }
+  else if (IMC>25.8 & IMC<=27.3){
+  Serial.print("Um pouco acima do peso");
+  }
+  else if (IMC>27.3 & IMC<=32.3){
+    Serial.print("Acima do peso");
+  }
+    else {
+      Serial.print("Obesidade");
+    }
+void loop()
+{
+
+}
