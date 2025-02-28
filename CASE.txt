@@ -1,0 +1,39 @@
+#define pinLEDVERMELHO 13
+#define pinLEDAZUL 11
+#define pinLEDAMARELO 10
+#define pinLEDLARANJA 9
+#define pinLEDVERDE 8
+int numero = 3;
+void setup()
+{
+  pinMode(pinLEDVERMELHO, OUTPUT);
+  pinMode(pinLEDAZUL, OUTPUT);
+  pinMode(pinLEDAMARELO, OUTPUT);
+  pinMode(pinLEDLARANJA, OUTPUT);
+  pinMode(pinLEDVERDE, OUTPUT);
+
+  switch(numero){
+  case 1: 
+    digitalWrite(pinLEDVERMELHO,HIGH);
+  break;
+    case 2:
+    digitalWrite(pinLEDAZUL, HIGH);
+    break;
+    case 3:
+    digitalWrite(pinLEDAMARELO, HIGH);
+    break;
+    case 4:
+    digitalWrite(pinLEDLARANJA, HIGH);
+    break;
+    case 5:
+    digitalWrite(pinLEDVERDE,HIGH);
+    break;
+
+}
+}
+
+
+void loop()
+{
+
+}
