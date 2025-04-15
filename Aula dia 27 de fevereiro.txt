@@ -1,0 +1,112 @@
+Exercício 1 :
+int numero = 0;
+void setup()
+{
+  Serial.begin(9600);
+  if (numero > 0){
+    Serial.print("O numero eh positivo");
+  }
+  else if (numero == 0){
+    Serial.print("O numero eh nulo");
+}
+  else {
+    Serial.print("O numero eh negativo");
+                 }
+}
+void loop()
+{
+
+}
+/////////////////////////////////////////////////////
+Exercício 2:
+String nome = "Pedrinho";
+String cargo ="Acougue";
+int salario = 1500;
+void setup()
+{
+  Serial.begin(9600);
+  if (salario<1000){
+    Serial.print(salario*1.1);
+    Serial.print(" Parabens esse e o seu novo salario");
+  }
+  else{
+    Serial.print("O seu salario se mantem igual");
+  }
+}
+void loop()
+{
+}
+////////////////////////////////////////////////////
+Exercício 3:
+int salario = 450;
+void setup()
+{
+  Serial.begin(9600);
+    if (salario < 500){
+    Serial.print("R$");
+    Serial.println(salario*1.3);
+    Serial.print("Parabens pelo novo salario");
+  }
+  else{
+    Serial.print("R$");
+    Serial.println(salario);
+    Serial.print("O seu salario se mantem");
+                 }
+    
+  
+}
+
+void loop()
+{
+  
+}
+////////////////////////////////////////////////////
+Exercício 4:
+int a = 2;
+  int b = 2;
+void setup()
+{
+  Serial.begin(9600);
+  if (a>b){
+    Serial.print("a eh maior que b");
+  }
+  else if (a == b){
+    Serial.print("Os dois sao iguais");
+  }
+  else{
+    Serial.print("b maior que a");
+  }
+}
+
+void loop()
+{
+
+}
+////////////////////////////////////////////////////
+Exercício 5:
+int nota1 = 8;
+int nota2 = 6;
+int nota3 = 4;
+int nota4 = 3;
+int media = (nota1+nota2+nota3+nota4)/4;
+void setup()
+{
+ Serial.begin(9600);
+  Serial.println(media);
+  if (media<5){
+    Serial.print("REPROVADO");
+  }
+      else if(media>=5 & media<=7){
+      Serial.print("RECUPERACAO");}
+    else{
+      Serial.print("APROVADO");
+    }
+       
+      
+}
+
+void loop()
+{
+
+}
+
